@@ -23,7 +23,7 @@ shinyUI(fluidPage(
        selectInput("y","Reponse variable(종속변수)",choices=c()),
        selectInput("x","Explanatory variables(독립변수)",choices=c(),multiple=TRUE),
        actionButton("analysis","Analysis"),
-       checkboxInput("se","show se")
+       checkboxInput("se","show se",value=TRUE)
     ),
     
     # Show a plot of the generated distribution

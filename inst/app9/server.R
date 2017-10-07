@@ -68,7 +68,7 @@ shinyServer(function(session,input, output) {
     output$plot.ui=renderUI({
          input$analysis
          
-       
+         isolate({
               plot_list=NULL
               if(length(input$x)>0){
                    df=mydata()
@@ -95,6 +95,7 @@ shinyServer(function(session,input, output) {
               }
               if(!is.null(plot_list)) do.call(tagList,plot_list)
          })
+    })
    
     
    
