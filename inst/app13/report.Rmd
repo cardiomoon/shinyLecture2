@@ -1,0 +1,30 @@
+---
+title: "Regression Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment=NA)
+```
+
+Summary of Regression Model:
+
+```{r model, echo=FALSE}
+options(digits = 2)
+fit <- eval(parse(text=paste0("lm( mpg ~",input$x,",data = mtcars)")))
+b   <- coef(fit)
+```
+
+```{r}
+summary(fit)
+```
+
+The fitting result is $mpg =  `r b[2]``r input$x`+`r b[1]`$.
+Below is a scatter plot with the regression line.
+
+```{r plot, echo=FALSE,fig.height=4}
+ggplot(data=mtcars,aes_string(req(input$x),"mpg"))+
+         geom_point()+
+         geom_smooth(method="lm")+
+         ggtitle(regEquation())
+```

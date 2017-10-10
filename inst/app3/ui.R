@@ -1,16 +1,12 @@
-fluidPage(
-  title = 'Download a PDF report',
-  sidebarLayout(
-    sidebarPanel(
-      helpText(),
-      selectInput('x', 'Build a regression model of mpg against:',
-                  choices = names(mtcars)[-1]),
-      radioButtons('format', 'Document format', c('PDF', 'HTML', 'Word'),
-                   inline = TRUE),
-      downloadButton('downloadReport')
-    ),
-    mainPanel(
-      plotOutput('regPlot')
-    )
+shinyUI(pageWithSidebar(
+  headerPanel("Click the button"),
+  sidebarPanel(
+    sliderInput("obs", "Number of observations:",
+                min = 0, max = 1000, value = 500),
+    textInput("title","title",value="Histogram"),
+    actionButton("update","update")
+  ),
+  mainPanel(
+    plotOutput("distPlot")
   )
-)
+))

@@ -1,7 +1,6 @@
-Title: Download knitr Reports
-Author: RStudio, Inc.
-AuthorUrl: http://www.rstudio.com/
-License: MIT
+Title: Stop reaction with isolate()
+Author: Keon-Woong Moon
+License: GPL-3
 DisplayMode: Showcase
-Tags: download knitr rmarkdown
+Tags: getting-started
 Type: Shiny

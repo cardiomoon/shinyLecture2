@@ -3,7 +3,7 @@ shinyUI(pageWithSidebar(
   sidebarPanel(
     sliderInput("obs", "Number of observations:",
                 min = 0, max = 1000, value = 500),
-    actionButton("goButton", "Go!")
+    textInput("title","title",value="Histogram")
   ),
   mainPanel(
     plotOutput("distPlot")
