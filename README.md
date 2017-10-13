@@ -28,13 +28,19 @@ https://github.com/cardiomoon/shinyLecture2
 - RStudio 설치: 
     - https://www.rstudio.com/products/rstudio/download/#download
 
-- 패키지설치 : RStudio에서 다음 패키지 설치
+필요한 R 패키지 : R console에서 다음 명령어 실행
 
 ```
-install.packages(c("knitr","tidyverse","learnr","nycflights13"))
-install.packages("devtools","moonBook","ztable","DT")
+install.packages("knitr","shiny","rmarkdown")
+install.packages("tidyverse","DT","moonBook")
 ```
----
+
+6번째 앱에서 knitr Reports 중 pdf 다운로드를 위하여는 LaTex 설치가 필요하다. (http://ktug.or.kr)
+
+9번째 interactive plot 을 위해서는 다음 패키지들의 설치가 필요하다.
+```
+install.packages("ggiraph","ggiraphExtra")
+```
 
 ### 강의록
 
