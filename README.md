@@ -1,6 +1,8 @@
 # R과 shiny를 이용한 web application 제작
 
-### 일시: 2017년 10월 13일
+### 초고완성: 2017년 10월 13일
+
+### 마지막 Update: 2018년 3월 18일 
 
 ### 강의: 문건웅(cardiomoon@gmail.com) 
 
@@ -32,7 +34,8 @@ https://github.com/cardiomoon/shinyLecture2
 
 ```
 install.packages("knitr","shiny","rmarkdown")
-install.packages("tidyverse","DT","moonBook")
+install.packages("tidyverse","DT","moonBook","editData","ggplotAssist")
+devtools::install_github("cardiomoon/webr")
 ```
 
 6번째 앱에서 knitr Reports 중 pdf 다운로드를 위하여는 LaTex 설치가 필요하다. (http://ktug.or.kr)
@@ -46,11 +49,13 @@ install.packages("ggiraph","ggiraphExtra")
 
 강의에는 다음 파일이 사용됩니다.
 
-- shiny1.pdf
+- shiny1.pdf : R과 Shiny를 이용한 Web Application 제작(I)
 
-- shiny2.pdf
+- shiny2.pdf : R과 Shiny를 이용한 Web Application 제작 (II)
 
-- Shiny3.pdf
+- shiny3.pdf : RStudio addin 제작
+
+- shiny4.pdf : Shiny module
 
 ---
 

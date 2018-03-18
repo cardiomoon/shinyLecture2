@@ -5,7 +5,11 @@ newApp=function(session){
   hostname<-session$clientData$url_hostname
   port<-session$clientData$url_port
   
-  url<-paste0(protocol,"//",hostname,":",port)
+  if(port=="3838") {
+       url<-paste0(protocol,"//",hostname,":",port,"/app21")
+  } else{
+       url<-paste0(protocol,"//",hostname,":",port)
+  }
   browseURL(url)
 }
 
@@ -15,7 +19,9 @@ varB <- 1
 ui=fluidPage(
     radioButtons("select","select Data",choices=c("iris","mtcars","mpg")),
     verbatimTextOutput("text"), 
-    actionButton("newApp","new App")
+    actionButton("newApp","new App"),
+    uiOutput("another")
+   
 )
 server=function(input,output,session){
   
@@ -28,11 +34,25 @@ server=function(input,output,session){
       varA <<- varA+1
       cat("varA=",varA,"\n")
       cat("varB=",varB,"\n")
-      
+     
   })
-  
    observeEvent(input$newApp,{
-       newApp(session)
+        newApp(session)
+        
+   })
+   
+   output$another=renderUI({
+        protocol<-session$clientData$url_protocol
+        hostname<-session$clientData$url_hostname
+        port<-session$clientData$url_port
+        
+        if(port=="3838") {
+             url<-paste0(protocol,"//",hostname,":",port,"/app21")
+        } else{
+             url<-paste0(protocol,"//",hostname,":",port)
+        }
+        
+        tags$a(href=url,"Launch Another App")
    })
 }
 
