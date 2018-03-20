@@ -33,8 +33,9 @@ https://github.com/cardiomoon/shinyLecture2
 필요한 R 패키지 : R console에서 다음 명령어 실행
 
 ```
-install.packages("knitr","shiny","rmarkdown")
-install.packages("tidyverse","DT","moonBook","editData","ggplotAssist")
+install.packages(c("knitr","shiny","rmarkdown"))
+install.packages(c("tidyverse","DT","moonBook","editData","ggplotAssist"))
+install.packages("devtools")
 devtools::install_github("cardiomoon/webr")
 ```
 
