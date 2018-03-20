@@ -2,7 +2,7 @@
 
 ### 초고완성: 2017년 10월 13일
 
-### 마지막 Update: 2018년 3월 18일 
+### 마지막 Update: 2018년 3월 20일 
 
 ### 강의: 문건웅(cardiomoon@gmail.com) 
 
@@ -40,10 +40,6 @@ devtools::install_github("cardiomoon/webr")
 
 6번째 앱에서 knitr Reports 중 pdf 다운로드를 위하여는 LaTex 설치가 필요하다. (http://ktug.or.kr)
 
-9번째 interactive plot 을 위해서는 다음 패키지들의 설치가 필요하다.
-```
-install.packages("ggiraph","ggiraphExtra")
-```
 
 ### 강의록
 
@@ -53,9 +49,9 @@ install.packages("ggiraph","ggiraphExtra")
 
 - shiny2.pdf : R과 Shiny를 이용한 Web Application 제작 (II)
 
-- shiny3.pdf : RStudio addin 제작
+- Shiny3.pdf : RStudio addin 제작
 
-- shiny4.pdf : Shiny module
+- Shiny4.pdf : Shiny module
 
 ---
 
