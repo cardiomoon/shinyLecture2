@@ -90,6 +90,9 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -157,19 +160,19 @@ $(document).ready(function () {
 </ul>
 <p>필요한 R 패키지 : R console에서 다음 명령어 실행</p>
 <pre><code>install.packages(c(&quot;knitr&quot;,&quot;shiny&quot;,&quot;rmarkdown&quot;))
-install.packages(c(&quot;tidyverse&quot;,&quot;DT&quot;,&quot;moonBook&quot;,&quot;editData&quot;,&quot;ggplotAssist&quot;))
+install.packages(c(&quot;tidyverse&quot;,&quot;DT&quot;,&quot;moonBook&quot;,&quot;ggplotAssist&quot;,&quot;rrtable&quot;))
 install.packages(&quot;devtools&quot;)
-devtools::install_github(&quot;cardiomoon/webr&quot;)</code></pre>
+devtools::install_github(&quot;cardiomoon/webr&quot;)
+devtools::install_github(&quot;cardiomoon/editData&quot;)
+</code></pre>
 <p>6번째 앱에서 knitr Reports 중 pdf 다운로드를 위하여는 LaTex 설치가 필요하다. (<a href="http://ktug.or.kr" class="uri">http://ktug.or.kr</a>)</p>
 </div>
 <div class="section level3">
 <h3>강의록</h3>
 <p>강의에는 다음 파일이 사용됩니다.</p>
 <ul>
-<li><p>shiny1.pdf : R과 Shiny를 이용한 Web Application 제작(I)</p></li>
-<li><p>shiny2.pdf : R과 Shiny를 이용한 Web Application 제작 (II)</p></li>
-<li><p>Shiny3.pdf : RStudio addin 제작</p></li>
-<li><p>Shiny4.pdf : Shiny module</p></li>
+<li><p>shinyLecture.pdf : R과 Shiny를 이용한 Web Application 제작</p></li>
+<li><p>shiny Module.pdf : Shiny module</p></li>
 </ul>
 <hr />
 </div>

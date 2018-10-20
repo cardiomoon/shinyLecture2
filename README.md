@@ -34,9 +34,11 @@ https://github.com/cardiomoon/shinyLecture2
 
 ```
 install.packages(c("knitr","shiny","rmarkdown"))
-install.packages(c("tidyverse","DT","moonBook","editData","ggplotAssist"))
+install.packages(c("tidyverse","DT","moonBook","ggplotAssist","rrtable"))
 install.packages("devtools")
 devtools::install_github("cardiomoon/webr")
+devtools::install_github("cardiomoon/editData")
+
 ```
 
 6번째 앱에서 knitr Reports 중 pdf 다운로드를 위하여는 LaTex 설치가 필요하다. (http://ktug.or.kr)
@@ -46,13 +48,9 @@ devtools::install_github("cardiomoon/webr")
 
 강의에는 다음 파일이 사용됩니다.
 
-- shiny1.pdf : R과 Shiny를 이용한 Web Application 제작(I)
+- shinyLecture.pdf : R과 Shiny를 이용한 Web Application 제작
 
-- shiny2.pdf : R과 Shiny를 이용한 Web Application 제작 (II)
-
-- Shiny3.pdf : RStudio addin 제작
-
-- Shiny4.pdf : Shiny module
+- shiny Module.pdf : Shiny module
 
 ---
 
